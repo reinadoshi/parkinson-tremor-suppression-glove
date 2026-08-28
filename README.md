@@ -1,5 +1,11 @@
 # Parkinson's Tremor Suppression Glove
 
+![Tremor Suppression Glove](media/glove-closeup.jpg)
+
+<p align="center">
+  <i>Wearable prototype with real-time tremor monitoring and active stabilization</i>
+</p>
+
 > A wearable embedded system that detects involuntary hand tremors and provides active mechanical stabilization using dual IMUs, an ESP32, BLE communication, and a servo-driven tendon mechanism.
 
 ## Overview
