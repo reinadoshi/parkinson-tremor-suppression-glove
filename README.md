@@ -62,7 +62,7 @@ The prototype firmware was developed on the ESP32 and split into two functional 
 `firmware/tremor_glove.ino`
 
 - Implements Bluetooth Low Energy communication using ESP32 BLE
-- - Streams tremor magnitude over BLE for live monitoring
+- Streams tremor magnitude over BLE for live monitoring
 - Uses threshold and persistence logic to control the servo
 - Drives the tendon mechanism between active and released states
 
