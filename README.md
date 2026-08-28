@@ -14,6 +14,16 @@ Parkinsonian tremors make precise hand movements difficult during everyday tasks
 
 Built during a **48-hour hackathon**, the prototype placed **6th out of 140 teams** at Tech-a-Thon (TSEC).
 
+## System Architecture
+
+The system combines dual inertial sensors, real-time processing on the ESP32, tremor detection, and mechanical actuation into a wearable feedback loop.
+
+<p align="center">
+  <img src="./media/system-architecture.png" width="800">
+</p>
+
+The sensing pipeline captures wrist and hand motion, processes the sensor data on the ESP32, evaluates tremor activity, and drives the servo-based tendon mechanism when stabilization is required.
+
 ## Features
 
 - Dual **MPU9250 IMUs** for wrist and knuckle motion sensing
