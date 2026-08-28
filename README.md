@@ -14,6 +14,17 @@ Parkinsonian tremors make precise hand movements difficult during everyday tasks
 
 Built during a **48-hour hackathon**, the prototype placed **6th out of 140 teams** at Tech-a-Thon (TSEC).
 
+## Hackathon Result
+
+**Tech-a-Thon — Thadomal Shahani Engineering College**
+
+🏆 **Rank 6 / 140 teams**  
+🎯 **Finalist — 11 teams**
+
+Built and demonstrated a functional tremor suppression glove prototype during a 48-hour hackathon. The project progressed through three competitive rounds, advancing from 140 teams to the final 11.
+
+The prototype demonstrated real-time motion sensing, tremor detection, servo-based mechanical stabilization, and BLE-enabled monitoring.
+
 ## System Architecture
 
 The system combines dual inertial sensors, real-time processing on the ESP32, tremor detection, and mechanical actuation into a wearable feedback loop.
