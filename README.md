@@ -46,6 +46,32 @@ The sensing pipeline captures wrist and hand motion, processes the sensor data o
 
 MPU9250 (Wrist) + MPU9250 (Knuckle) → ESP32 → Signal Processing → Tremor Detection → Servo Motor → Tendon Stabilization
 
+## Firmware
+
+The prototype firmware was developed on the ESP32 and split into two functional components:
+
+### IMU-Based Tremor Detection
+`firmware/imu_tremor_detection.ino`
+
+- Reads wrist and hand motion from dual IMUs over I²C
+- Samples motion data at 100 Hz and performs sensor calibration
+- Applies exponential smoothing and computes a differential tremor signal
+- Uses persistence-based change detection to trigger servo actuation
+
+### BLE & Actuation Control
+`firmware/tremor_glove.ino`
+
+- Implements Bluetooth Low Energy communication using ESP32 BLE
+- - Streams tremor magnitude over BLE for live monitoring
+- Uses threshold and persistence logic to control the servo
+- Drives the tendon mechanism between active and released states
+
+## Technologies
+
+**Hardware:** ESP32 · MPU9250 IMUs · Servo Motor · Tendon Mechanism  
+**Communication:** I²C · Bluetooth Low Energy (BLE)  
+**Software:** Arduino/C++ · ESP32Servo · ESP32 BLE
+
 ## Results
 
 - Functional wearable prototype completed in **48 hours**
